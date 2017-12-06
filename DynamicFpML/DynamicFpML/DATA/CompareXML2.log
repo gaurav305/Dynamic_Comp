@@ -1,0 +1,19 @@
+QATestTradeID: ts3-CreditSuisse-fx-RUBY-RFS
+Difference 1: Element Text differs at //FpML/tradeSTPHeader/docType. Expected: fx.spot Actual: fx.spot1
+Total_Compared: 4
+QATestTradeID: ts3-JPM-fx-14e1daa3e54-1-176633847
+Difference 2: Element Text differs at //FpML/trade/tradeHeader/completedDateTime. Expected: 2015-06-23TZ Actual: 2015-06-23T23:46:18Z
+Difference 3: Element Text differs at //FpML/party/partyId. Expected: JPMPROL Actual: JPMPROL1
+Difference 4: Element Text differs at //FpML/party/partyName. Expected: PROLOGUE Capital Actual: PROLOGUE Capital gain
+Total_Compared: 49
+QATestTradeID: ts4-SFXFLXTDParabellum-fx-1509178000000091
+Difference 5: Element Text differs at //FpML/header/creationTimestamp. Expected: 2015-09-21T14:22:22.090Z Actual: 2015-09-21T14:21:21.090Z
+Difference 6: Element Text differs at //FpML/trade/tradeHeader/partyTradeIdentifier/tradeId. Expected: FIQ0026FXCC Actual: FIQ0026FX
+Difference 7: Element Text differs at //FpML/trade/tradeHeader/partyTradeInformation/trader. Expected: AliZaid Actual: Ali
+Difference 8: Element Text differs at //FpML/trade/tradeHeader/completedDateTime. Expected: 1915-09-17T12:18:22.506Z Actual: 2015-09-17T12:18:22.506Z
+Difference 9: Element Text differs at //FpML/trade/vendor/vendorDefinedValue. Expected: EURUSD Actual: EUR/USD
+Difference 10: Element Text differs at //FpML/party/partyId. Expected: PARAa Actual: PARA
+Difference 11: Element Text differs at //FpML/party/partyName. Expected: PARA_MILI Actual: PARA
+Total_Compared: 66
+QATestTradeID: ts4-SFXFLXTDParabellum-fx-1509178000000091
+Total_Compared: 66

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FpML xmlns="http://www.fpml.org/2005/FpML-4-2"
+    xmlns:tsmulti="http://www.logicscope.com/TradeSTP3/documents/multi"
+    xmlns:ext="http://www.fpml.org/extensions" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ts="http://www.logicscope.com/TradeSTP3/documents"
+    xmlns:tsfpml="http://www.logicscope.com/TradeSTP3/documents/fpml-extensions"
+    xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:type="DataDocument" version="4-2">
+    <ts:tradeSTPHeader>
+        <ts:docType>fx.spot</ts:docType>
+        <ts:docKey>ts3-JPM-fx-14e1daa3e54-1-176633847</ts:docKey>
+        <ts:routeId>CreditSuisse/JPMPROL</ts:routeId>
+    </ts:tradeSTPHeader>
+    <trade>
+        <tradeHeader>
+            <partyTradeIdentifier>
+                <partyReference href="OUR_PARTY"/>
+                <tradeId tradeIdScheme="uniqueId">RUBY-RFS:14e1daa3e54-1</tradeId>
+            </partyTradeIdentifier>
+            <partyTradeInformation>
+                <partyReference href="OUR_PARTY"/>
+                <trader tsfpml:traderName="oxford am">csfx-oxfordrfs-user</trader>
+            </partyTradeInformation>
+            <tradeDate>2015-06-23</tradeDate>
+            <tsfpml:completedDateTime>2015-06-23T23:46:18Z</tsfpml:completedDateTime>
+        </tradeHeader>
+        <tsfpml:vendor>
+            <tsfpml:vendorPartyReference href="VENDOR"/>
+            <tsfpml:vendorDefinedValue tsfpml:fieldName="FriskId"
+                >176633847</tsfpml:vendorDefinedValue>
+            <tsfpml:vendorDefinedValue tsfpml:fieldName="Trade_Timestamp">2015-06-22
+                23:46:18</tsfpml:vendorDefinedValue>
+        </tsfpml:vendor>
+        <fxSingleLeg>
+            <productType>FXSPOT</productType>
+            <exchangedCurrency1 tsfpml:dealtAction="Sell">
+                <payerPartyReference href="OUR_PARTY"/>
+                <receiverPartyReference href="COUNTERPARTY"/>
+                <paymentAmount>
+                    <currency>EUR</currency>
+                    <amount>2000000.00</amount>
+                </paymentAmount>
+            </exchangedCurrency1>
+            <exchangedCurrency2>
+                <payerPartyReference href="COUNTERPARTY"/>
+                <receiverPartyReference href="OUR_PARTY"/>
+                <paymentAmount>
+                    <currency>USD</currency>
+                    <amount>2268280.00</amount>
+                </paymentAmount>
+            </exchangedCurrency2>
+            <valueDate>2015-06-24</valueDate>
+            <exchangeRate>
+                <quotedCurrencyPair>
+                    <currency1>EUR</currency1>
+                    <currency2>USD</currency2>
+                    <quoteBasis>Currency2PerCurrency1</quoteBasis>
+                </quotedCurrencyPair>
+                <rate>1.13414</rate>
+            </exchangeRate>
+            <tsfpml:tenorPeriod>Spot</tsfpml:tenorPeriod>
+        </fxSingleLeg>
+    </trade>
+    <party id="OUR_PARTY">
+        <partyId>JPMPROL1</partyId>
+        <partyName>PROLOGUE Capital gain</partyName>
+    </party>
+    <party id="COUNTERPARTY">
+        <partyId>CSLT</partyId>
+        <partyName>"Credit Suisse London - TEST"</partyName>
+    </party>
+    <party id="VENDOR">
+        <partyId>CS</partyId>
+        <partyName>Credit Suisse</partyName>
+    </party>
+</FpML>

@@ -1,0 +1,30 @@
+Difference 1: Attributes at //FpML are different.  The attribute {http://www.logicscope.com/TradeSTP3/documents}docId is missing in the Actual Result.
+Difference 2: Children at //FpML/tradeSTPHeader are different.  The nodes linkId, collectionName, tradestpVersion, storeDate, label, route are missing in the Actual Result.
+Difference 3: Element Text differs at //FpML/tradeSTPHeader/docType. Expected: fx.spot Actual: 1
+Difference 4: Element Text differs at //FpML/tradeSTPHeader/docKey. Expected: ts3-CreditSuisse-fx-RUBY-RFS:14e1daa3e54-1-176633847 Actual: All Documents
+Difference 5: Element Text differs at //FpML/tradeSTPHeader/routeId. Expected: CreditSuisse/JPMPROL Actual: 3.1.9
+Difference 6: Element Text differs at //FpML/trade/tradeHeader/partyTradeIdentifier/tradeId. Expected: RUBY-RFS:14e1daa3e54-1 Actual: TCC-5855532:1
+Difference 7: Element Text differs at //FpML/trade/tradeHeader/partyTradeInformation/trader. Expected: csfx-oxfordrfs-user Actual: demo.trader
+Difference 8: Attribute values at //FpML/trade/tradeHeader/partyTradeInformation/trader/@{http://www.logicscope.com/TradeSTP3/documents/fpml-extensions}traderName are different.  Expected: oxford am Actual: demo.trader
+Difference 9: Element Text differs at //FpML/trade/tradeHeader/tradeDate. Expected: 2015-06-23 Actual: 2011-04-11
+Difference 10: Element Text differs at //FpML/trade/tradeHeader/completedDateTime. Expected: 2015-06-23TZ Actual: 2011-04-11T09:54:06Z
+Difference 11: Element Text differs at //FpML/trade/vendor/vendorDefinedValue. Expected: 176633847 Actual: DEMOBANK
+Difference 12: Attribute values at //FpML/trade/vendor/vendorDefinedValue/@{http://www.logicscope.com/TradeSTP3/documents/fpml-extensions}fieldName are different.  Expected: FriskId Actual: MainAccount
+Difference 13: Attribute values at //FpML/trade/fxSingleLeg/exchangedCurrency1/@{http://www.logicscope.com/TradeSTP3/documents/fpml-extensions}dealtAction are different.  Expected: Sell Actual: Buy
+Difference 14: Attribute values at //FpML/trade/fxSingleLeg/exchangedCurrency1/payerPartyReference/@href are different.  Expected: OUR_PARTY Actual: COUNTERPARTY
+Difference 15: Attribute values at //FpML/trade/fxSingleLeg/exchangedCurrency1/receiverPartyReference/@href are different.  Expected: COUNTERPARTY Actual: OUR_PARTY
+Difference 16: Element Text differs at //FpML/trade/fxSingleLeg/exchangedCurrency1/paymentAmount/currency. Expected: EUR Actual: GBP
+Difference 17: Element Text differs at //FpML/trade/fxSingleLeg/exchangedCurrency1/paymentAmount/amount. Expected: 2000000.00 Actual: 10000.0
+Difference 18: Attribute values at //FpML/trade/fxSingleLeg/exchangedCurrency2/payerPartyReference/@href are different.  Expected: COUNTERPARTY Actual: OUR_PARTY
+Difference 19: Attribute values at //FpML/trade/fxSingleLeg/exchangedCurrency2/receiverPartyReference/@href are different.  Expected: OUR_PARTY Actual: COUNTERPARTY
+Difference 20: Element Text differs at //FpML/trade/fxSingleLeg/exchangedCurrency2/paymentAmount/amount. Expected: 2268280.00 Actual: 16342.4
+Difference 21: Element Text differs at //FpML/trade/fxSingleLeg/valueDate. Expected: 2015-06-24 Actual: 2011-04-13
+Difference 22: Element Text differs at //FpML/trade/fxSingleLeg/exchangeRate/quotedCurrencyPair/currency1. Expected: EUR Actual: GBP
+Difference 23: Element Text differs at //FpML/trade/fxSingleLeg/exchangeRate/rate. Expected: 1.13414 Actual: 1.63424
+Difference 24: Children at //FpML/party are different.  The node partyName is new in the Actual Result.
+Difference 25: Attributes at //FpML/party are different.  The attribute {http://www.logicscope.com/TradeSTP3/documents/fpml-extensions}matchingRole is missing in the Actual Result.
+Difference 26: Element Text differs at //FpML/party/partyId. Expected: JPMPROL Actual: DEMOBANK
+Difference 27: Element Text differs at //FpML/party/partyId. Expected: CSLT Actual: SOCGEN
+Difference 28: Element Text differs at //FpML/party/partyName. Expected: "Credit Suisse London - TEST" Actual: SOCGEN
+Difference 29: Element Text differs at //FpML/party/partyId. Expected: CS Actual: SOCGEN
+Difference 30: Element Text differs at //FpML/party/partyName. Expected: Credit Suisse Actual: SOCGEN

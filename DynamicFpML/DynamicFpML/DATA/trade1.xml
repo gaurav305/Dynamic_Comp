@@ -1,0 +1,76 @@
+
+<FpML xmlns="http://www.fpml.org/2005/FpML-4-2" xmlns:tsfpml="http://www.logicscope.com/TradeSTP3/documents/fpml-extensions" xmlns:ts="http://www.logicscope.com/TradeSTP3/documents" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DataDocument" version="4-2" ts:docId="1">
+  <ts:tradeSTPHeader>
+    <ts:linkId>1</ts:linkId>
+    <ts:collectionName>All Documents</ts:collectionName>
+    <ts:tradestpVersion>3.1.9</ts:tradestpVersion>
+    <ts:storeDate>2011-05-17T16:24:00.442Z</ts:storeDate>
+    <ts:docType>fx.spot</ts:docType>
+    <ts:docKey>ts3-SOCGEN-DealHubFix-fx-TCC-5855532:1</ts:docKey>
+    <ts:label>FileInput.FileInput1</ts:label>
+    <ts:routeId>SOCGEN/DEMOBANK</ts:routeId>
+    <ts:route/>
+  </ts:tradeSTPHeader>
+  <trade>
+    <tradeHeader>
+      <partyTradeIdentifier>
+        <partyReference href="OUR_PARTY"/>
+        <tradeId tradeIdScheme="uniqueId">TCC-5855532:1</tradeId>
+        <tradeId tradeIdScheme="execId">TCC-5855532:1</tradeId>
+        <tradeId tradeIdScheme="SphinxId">TCC-5855532:1</tradeId>
+        <tradeId tradeIdScheme="orderId">ECN2_110411_085406_001</tradeId>
+        <tradeId tradeIdScheme="AlphaTradeId">ECN2_110411_085406_001</tradeId>
+      </partyTradeIdentifier>
+      <partyTradeInformation>
+        <partyReference href="OUR_PARTY"/>
+        <trader tsfpml:traderName="demo.trader">demo.trader</trader>
+      </partyTradeInformation>
+      <tradeDate>2011-04-11</tradeDate>
+      <tsfpml:completedDateTime>2011-04-11T09:54:06Z</tsfpml:completedDateTime>
+    </tradeHeader>
+    <tsfpml:vendor>
+      <tsfpml:vendorPartyReference href="VENDOR"/>
+      <tsfpml:vendorDefinedValue tsfpml:fieldName="MainAccount">DEMOBANK</tsfpml:vendorDefinedValue>
+    </tsfpml:vendor>
+    <fxSingleLeg>
+      <productType>FXSPOT</productType>
+      <exchangedCurrency1 tsfpml:dealtAction="Buy">
+        <payerPartyReference href="COUNTERPARTY"/>
+        <receiverPartyReference href="OUR_PARTY"/>
+        <paymentAmount>
+          <currency>GBP</currency>
+          <amount>10000.0</amount>
+        </paymentAmount>
+      </exchangedCurrency1>
+      <exchangedCurrency2>
+        <payerPartyReference href="OUR_PARTY"/>
+        <receiverPartyReference href="COUNTERPARTY"/>
+        <paymentAmount>
+          <currency>USD</currency>
+          <amount>16342.4</amount>
+        </paymentAmount>
+      </exchangedCurrency2>
+      <valueDate>2011-04-13</valueDate>
+      <exchangeRate>
+        <quotedCurrencyPair>
+          <currency1>GBP</currency1>
+          <currency2>USD</currency2>
+          <quoteBasis>Currency2PerCurrency1</quoteBasis>
+        </quotedCurrencyPair>
+        <rate>1.63424</rate>
+      </exchangeRate>
+      <tsfpml:tenorPeriod>Spot</tsfpml:tenorPeriod>
+    </fxSingleLeg>
+  </trade>
+  <party tsfpml:matchingRole="Taker" id="OUR_PARTY">
+    <partyId>DEMOBANK</partyId>
+  </party>
+  <party id="COUNTERPARTY">
+    <partyId>SOCGEN</partyId>
+    <partyName>SOCGEN</partyName>
+  </party>
+  <party id="VENDOR">
+    <partyId>SOCGEN</partyId>
+    <partyName>SOCGEN</partyName>
+  </party>
+</FpML>

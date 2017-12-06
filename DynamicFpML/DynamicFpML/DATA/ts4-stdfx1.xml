@@ -1,0 +1,85 @@
+
+<FpML xmlns="http://www.fpml.org/2005/FpML-4-2" xmlns:tsfpml="http://www.logicscope.com/TradeSTP3/documents/fpml-extensions" xmlns:ts="http://www.logicscope.com/TradeSTP3/documents" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TradeCreated" version="4-2" ts:docId="39981">
+  <ts:tradeSTPHeader>
+    <ts:linkId>72</ts:linkId>
+    <ts:collectionName>FlexTrade</ts:collectionName>
+    <ts:tradestpVersion>4.4.5</ts:tradestpVersion>
+    <ts:storeDate>2015-09-21T14:21:21.111Z</ts:storeDate>
+    <ts:docType>fx.spot</ts:docType>
+    <ts:docKey>ts4-SFXFLXTDParabellum-fx-1509178000000091</ts:docKey>
+    <ts:routeId>SFXFLXTDParabellum/FlexUK</ts:routeId>
+    <ts:venue>SFXFLXTDParabellum</ts:venue>
+    <ts:archivalDate>2015-09-21T14:21:21.111Z</ts:archivalDate>
+  </ts:tradeSTPHeader>
+  <header>
+    <messageId messageIdScheme="ts:docKey">ts4-SFXFLXTDParabellum-fx-1509178000000091</messageId>
+    <sentBy>SFXFLXTDParabellum</sentBy>
+    <creationTimestamp>2015-09-21T14:22:22.090Z</creationTimestamp>
+  </header>
+  <trade>
+    <tradeHeader>
+      <partyTradeIdentifier>
+        <partyReference href="OUR_PARTY"/>
+        <tradeId tradeIdScheme="uniqueId">1509178000000091</tradeId>
+        <tradeId tradeIdScheme="execId">1509178000000091</tradeId>
+        <tradeId tradeIdScheme="orderId">BFIQ0026FX</tradeId>
+        <tradeId tradeIdScheme="clientOrderId">FIQ0026FXCC</tradeId>
+      </partyTradeIdentifier>
+      <partyTradeInformation>
+        <partyReference href="OUR_PARTY"/>
+        <trader tsfpml:traderName="Ali">AliZaid</trader>
+      </partyTradeInformation>
+      <tradeDate>2015-09-17</tradeDate>
+      <tsfpml:completedDateTime>1915-09-17T12:18:22.506Z</tsfpml:completedDateTime>
+    </tradeHeader>
+    <tsfpml:vendor>
+      <tsfpml:vendorPartyReference href="VENDOR"/>
+      <tsfpml:vendorDefinedValue tsfpml:fieldName="Symbol">EURUSD</tsfpml:vendorDefinedValue>
+      <tsfpml:vendorDefinedValue tsfpml:fieldName="SecuritySubType">FXSPOT</tsfpml:vendorDefinedValue>
+      <tsfpml:vendorDefinedValue tsfpml:fieldName="LastQty">84000.00</tsfpml:vendorDefinedValue>
+      <tsfpml:vendorDefinedValue tsfpml:fieldName="MsqSeqNum">63</tsfpml:vendorDefinedValue>
+      <tsfpml:vendorDefinedValue tsfpml:fieldName="SendingTime">20150921-14:21:07.743</tsfpml:vendorDefinedValue>
+    </tsfpml:vendor>
+    <fxSingleLeg>
+      <productType>FXSPOT</productType>
+      <exchangedCurrency1 tsfpml:dealtAction="Buy">
+        <payerPartyReference href="COUNTERPARTY"/>
+        <receiverPartyReference href="OUR_PARTY"/>
+        <paymentAmount>
+          <currency>EUR</currency>
+          <amount>84000.00</amount>
+        </paymentAmount>
+      </exchangedCurrency1>
+      <exchangedCurrency2>
+        <payerPartyReference href="OUR_PARTY"/>
+        <receiverPartyReference href="COUNTERPARTY"/>
+        <paymentAmount>
+          <currency>USD</currency>
+          <amount>95019.12</amount>
+        </paymentAmount>
+      </exchangedCurrency2>
+      <valueDate>2015-09-21</valueDate>
+      <exchangeRate>
+        <quotedCurrencyPair>
+          <currency1>EUR</currency1>
+          <currency2>USD</currency2>
+          <quoteBasis>Currency2PerCurrency1</quoteBasis>
+        </quotedCurrencyPair>
+        <rate>1.131180</rate>
+      </exchangeRate>
+      <tsfpml:tenorPeriod>Spot</tsfpml:tenorPeriod>
+    </fxSingleLeg>
+  </trade>
+  <party id="OUR_PARTY">
+    <partyId>FlexUK</partyId>
+    <partyName>FlexUK</partyName>
+  </party>
+  <party id="COUNTERPARTY">
+    <partyId>PARAa</partyId>
+	<partyName>PARA_MILI</partyName>
+  </party>
+  <party id="VENDOR">
+    <partyId>SFXFLXTDParabellum</partyId>
+    <partyName>SFXFLXTDParabellum</partyName>
+  </party>
+</FpML>

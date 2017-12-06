@@ -1,0 +1,5 @@
+QATestTradeID: ts4-BTMU-fx-20161207-1209200006e
+Difference 1: Element Text differs at {http://www.fpml.org/2005/FpML-4-2}tradeId{'tradeIdScheme': 'execId'}. Expected:  1209200006e Actual: 1209200006e1   
+Difference 2: Element Text differs at {http://www.fpml.org/2005/FpML-4-2}tradeId{'tradeIdScheme': 'uniqueId'}. Expected:  1209200006e Actual: 1209200006e1   
+Difference 3: Element Text differs at {http://www.fpml.org/2005/FpML-4-2}messageId{'messageIdScheme': 'ts:docKey'}. Expected:  ts4-BTMU-fx-20161207-1209200006e Actual: ts4-BTMU-fx-20161207-1209200006e1   
+Difference 4: Element Text differs at {http://www.logicscope.com/TradeSTP3/documents}docKey{}. Expected:  ts4-BTMU-fx-20161207-1209200006e Actual: ts4-BTMU-fx-20161207-1209200006e1   

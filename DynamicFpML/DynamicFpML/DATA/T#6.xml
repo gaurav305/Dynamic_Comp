@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FpML xmlns="http://www.fpml.org/2005/FpML-4-2"
+    xmlns:tsmulti="http://www.logicscope.com/TradeSTP3/documents/multi"
+    xmlns:ext="http://www.fpml.org/extensions" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ts="http://www.logicscope.com/TradeSTP3/documents"
+    xmlns:tsfpml="http://www.logicscope.com/TradeSTP3/documents/fpml-extensions"
+    xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xsi:type="DataDocument" version="4-2">
+    <ts:tradeSTPHeader>
+		<ts:docKey>ts3-CreditSuisse-fx-RUBY-RFS</ts:docKey>
+        <ts:docType>fx.spot1</ts:docType>
+    </ts:tradeSTPHeader>
+</FpML>
